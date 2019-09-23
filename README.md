@@ -16,4 +16,4 @@ Add the following to your `deps.edn` file:
 
 Then run `clj -Astyle` to get an auto reloading Garden flow going.
 
-To build once: `clj --main gardener.compiler --stylesheet your.project/stylesheet --output-to path/to/your/file.css --build-once true`
+To build once: `clj -m gardener.compiler --stylesheet your.project/stylesheet --output-to path/to/your/file.css --build-once true`
