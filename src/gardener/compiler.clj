@@ -24,8 +24,9 @@
 
     (when-not (Boolean/valueOf --build-once)
       (dirwatch/watch-dir
-       (fn [_]
-         (reload-stylesheet stylesheet)
-         (compile-stylesheet stylesheet options))
+       (fn [{:keys [file]}]
+         (when (.isFile file)
+           (reload-stylesheet stylesheet)
+           (compile-stylesheet stylesheet options)))
        (clojure.java.io/file --watch))
       (deref (promise)))))
