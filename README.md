@@ -5,7 +5,7 @@
 ## Setup
 Add the following to your `deps.edn` file:
 ```
-:aliases {:style {:extra-deps {gardener {:git/url "https://github.com/kgxsz/gardener" :sha
+:aliases {:style {:extra-deps {gardener {:git/url "https://github.com/kgxsz/gardener"
                                          :sha "SOME_SHA"}}
                   :main-opts ["--main" "gardener.compiler"
                               "--stylesheet" "your.project/stylesheet"
