@@ -1,2 +1,2 @@
-{:deps {garden {:mvn/version "1.3.9"}
+{:deps {garden/garden {:mvn/version "1.3.9"}
         juxt/dirwatch {:mvn/version "0.2.5"}}}
